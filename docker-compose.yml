@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  web-api:
+    build: .
+    ports:
+      - "8080:3000" # Host Port 8080 dipetakan ke Container Port 3000
+    environment:
+      - PORT=3000
